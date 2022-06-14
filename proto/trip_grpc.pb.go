@@ -42,7 +42,7 @@ func (c *tripServiceClient) GetTrip(ctx context.Context, in *GetTripRequest, opt
 	return out, nil
 }
 
-// TripServiceServer is the server API for TripService service.
+// TripServiceServer is the grpc-gateway-demo API for TripService service.
 // All implementations must embed UnimplementedTripServiceServer
 // for forward compatibility
 type TripServiceServer interface {

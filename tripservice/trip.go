@@ -2,7 +2,7 @@ package trip
 
 import (
 	"context"
-	trippb "server/proto"
+	trippb "grpc-gateway-demo/proto"
 )
 
 type Service struct {

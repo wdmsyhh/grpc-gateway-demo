@@ -4,14 +4,14 @@ import (
 	"context"
 	"fmt"
 	"google.golang.org/grpc"
+	trippb "grpc-gateway-demo/proto"
 	"log"
-	trippb "server/proto"
 )
 
 func main() {
 	conn, err := grpc.Dial("localhost:8081", grpc.WithInsecure())
 	if err != nil {
-		log.Fatalf("cann't connect server: %v", err)
+		log.Fatalf("cann't connect grpc-gateway-demo: %v", err)
 	}
 
 	client := trippb.NewTripServiceClient(conn)

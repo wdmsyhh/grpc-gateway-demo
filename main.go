@@ -5,11 +5,11 @@ import (
 	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/encoding/protojson"
+	trippb "grpc-gateway-demo/proto"
+	trip "grpc-gateway-demo/tripservice"
 	"log"
 	"net"
 	"net/http"
-	trippb "server/proto"
-	trip "server/tripservice"
 )
 
 func main() {
